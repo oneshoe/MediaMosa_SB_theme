@@ -12,7 +12,7 @@
 <div id="container">
   <?php if ($site_slogan): ?>
     <div class="slogan">
-      <h1><?php print $site_slogan; ?></h1>
+      <p><?php print $site_slogan; ?></p>
     </div>
   <?php endif; ?>
 

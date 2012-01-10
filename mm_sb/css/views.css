@@ -26,15 +26,15 @@
 .view .views-field-still-url:after {
   content: url('../images/sprite.png');
   position: absolute;
-  left: 178px;
-  top: -46px;
+  left: 188px;
+  top: -47px;
 }
 
 .view .views-field-mediafile-duration {
   padding: 5px;
   position: absolute;
-  top: 113px;
-  left: 173px;
+  top: 134px;
+  left: 184px;
   font-size: 12px;
   font-weight: bold;
   background: #000;
