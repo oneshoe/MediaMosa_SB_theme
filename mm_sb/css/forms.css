@@ -13,19 +13,23 @@
   border: 10px solid #eaeaf3;
 }
 
+.page-asset-edit #content form .form-wrapper,
 .page-asset-upload #content form .form-wrapper {
   padding: 0 50px;
 }
 
+.page-asset-edit #content form .form-wrapper .description,
 .page-asset-upload #content form .form-wrapper .description {
   margin-left: 120px;
   margin-top: 9px;
 }
 
+.page-asset-edit #content form .form-wrapper .form-wrapper,
 .page-asset-upload #content form .form-wrapper .form-wrapper {
   padding: 0;
 }
 
+.page-asset-edit #content form .form-wrapper legend .fieldset-legend,
 .page-asset-upload #content form .form-wrapper legend .fieldset-legend {
   width: 700px;
   margin-bottom: 13px;
@@ -37,12 +41,14 @@
   border-bottom: 1px solid #eaeaf3;
 }
 
+.page-asset-edit #content form .form-wrapper .fieldset-legend span,
 .page-asset-upload #content form .form-wrapper .fieldset-legend span {
   font-size: 12px;
   color: #000;
   font-weight: normal;
 }
 
+.page-asset-edit #content form .form-wrapper label,
 .page-asset-upload #content form .form-wrapper label {
   width: 120px;
   float: left;
@@ -51,6 +57,8 @@
   line-height: 24px;
 }
 
+.page-asset-edit #content form .form-wrapper input[type="text"],
+.page-asset-edit #content form .form-wrapper textarea,
 .page-asset-upload #content form .form-wrapper input[type="text"],
 .page-asset-upload #content form .form-wrapper textarea {
   width: 460px;
@@ -62,11 +70,14 @@
  * Table in form
  *********************************************************/
 
+.page-asset-edit #content form .form-wrapper table,
 .page-asset-upload #content form .form-wrapper table {
   margin-bottom: 20px;
   width: 100%;
 }
 
+.page-asset-edit #content form .form-wrapper table tr td,
+.page-asset-edit #content form .form-wrapper table tr th,
 .page-asset-upload #content form .form-wrapper table tr td,
 .page-asset-upload #content form .form-wrapper table tr th {
   padding: 8px 5px;
@@ -80,6 +91,7 @@ fieldset.collapsible {
   margin-bottom: 5px;
 }
 
+html.js .page-asset-edit #content form .form-wrapper fieldset.collapsible,
 html.js .page-asset-upload #content form .form-wrapper fieldset.collapsible {
   width: 629px;
   padding: 0 35px;
@@ -89,6 +101,7 @@ html.js .page-asset-upload #content form .form-wrapper fieldset.collapsible {
   margin-bottom: 30px;
 }
 
+html.js .page-asset-edit #content form .form-wrapper fieldset.collapsible .fieldset-legend,
 html.js .page-asset-upload #content form .form-wrapper fieldset.collapsible .fieldset-legend {
   width: 685px;
   margin-left: -35px;
@@ -99,6 +112,7 @@ html.js .page-asset-upload #content form .form-wrapper fieldset.collapsible .fie
   background-color: #ccc;
 }
 
+html.js .page-asset-edit #content form .form-wrapper fieldset.collapsible .fieldset-legend a,
 html.js .page-asset-upload #content form .form-wrapper fieldset.collapsible .fieldset-legend a {
   color: #404040;
   font-size: 12px;
