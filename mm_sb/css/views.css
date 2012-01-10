@@ -238,7 +238,8 @@
  * Asset detail information block
  *********************************************************/
 
-.page-asset h1 {
+.page-asset h1,
+.page-collection h1 {
   max-width: 750px;
   margin-bottom: 20px;
   font-size: 32px;
