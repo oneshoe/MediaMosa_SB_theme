@@ -28,7 +28,7 @@
   <li><span><?php print l(t('Edit'), 'asset/edit/' . $fields['asset_id']->raw, array('attributes' => array('class' => 'edit'))); ?></span></li>
 </ul>
 <h1><?php print $fields['title']->content; ?></h1>
-<?php dsm($fields); ?>
+
 <div class="asset-video-player">
   <?php print $fields['player']->content; ?>
 </div>

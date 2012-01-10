@@ -29,7 +29,7 @@
   <li><span><?php print l(t('Edit'), 'edit', array('attributes' => array('class' => 'edit'))); ?></span></li>
 </ul>
 <div class="collection-videos">
-  <?php dsm($fields); ?>
+  collection videos overview
 </div>
 
 <div class="asset-detail-information">
