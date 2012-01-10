@@ -1,0 +1,24 @@
+
+/* Primary links */
+#block-system-main-menu a {
+  color: #000000;
+}
+
+/* Featured block */
+#content #spotlight {
+  background-color: #EAEAF3;
+}
+
+/* Video thumbs */
+.video .views-field-title {
+    color: #f1761e;
+}
+
+.views-field-videotimestamp {
+  color: #8e8e8e;
+}
+
+/* Head titles */
+h2 {
+  color: #595959;
+}
