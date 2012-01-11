@@ -27,7 +27,7 @@ function bootstrap_theme() {
 /**
  * Override or insert variables into the page template for HTML output.
  */
-function mm_sb_process_html(&$variables) {
+function mediamosa_sb_theme_process_html(&$variables) {
   // Hook into color.module.
   if (module_exists('color')) {
     _color_html_alter($variables);
@@ -37,7 +37,7 @@ function mm_sb_process_html(&$variables) {
 /**
  * Implements hook_preprocess_page().
  */
-function mm_sb_preprocess_page(&$variables) {
+function mediamosa_sb_theme_preprocess_page(&$variables) {
   // Hook into color.module.
   if (module_exists('color')) {
     _color_page_alter($variables);
@@ -51,7 +51,7 @@ function mm_sb_preprocess_page(&$variables) {
 /**
  * Theme override for theme_breadcrumb().
  */
-function mm_sb_breadcrumb($variables) {
+function mediamosa_sb_theme_breadcrumb($variables) {
   $breadcrumb = array_values($variables['breadcrumb']);
   $l = count($breadcrumb);
   $items = array();

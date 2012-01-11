@@ -12,7 +12,7 @@
 .page-asset #content form,
 .page-collection #content form {
   padding: 10px;
-  border: 10px solid #eaeaf3;
+  border: 10px solid;
 }
 
 .page-asset #content form .form-wrapper,

@@ -34,16 +34,21 @@
 
 <div class="collection-detail-information">
   <div class="information-row">
-    <p class="collection-view-count"><span class="count">20</span> <?php print t('videos'); ?></p>
+    <p class="collection-view-count"><span class="count"><?php print $fields['numofvideos']->raw; ?></span> <?php print t('videos'); ?></p>
 
     <p class="collection-uploaded-info">
-      <?php print t('Posted by');?>: <strong>[hardcoded]</strong> <?php print t('on'); ?> <strong>[hardcoded]</strong>
+      <?php print t('Posted by');?>: <strong>[hardcoded]</strong> <?php print t('on'); ?> <strong><?php print $fields['created']->content; ?></strong>
     </p>
+  </div>
+
+  <div class="information-row">
+    <h3><?php print t('About this collection'); ?></h3>
+    <p><?php print $fields['description']->content; ?></p>
   </div>
 
 </div>
 
-<!--
+
 <?php foreach ($fields as $id => $field): ?>
     <?php if (!empty($field->separator)): ?>
       <?php print $field->separator; ?>
@@ -54,4 +59,3 @@
       <?php print $field->content; ?>
     <?php print $field->wrapper_suffix; ?>
   <?php endforeach; ?>
-  --> 

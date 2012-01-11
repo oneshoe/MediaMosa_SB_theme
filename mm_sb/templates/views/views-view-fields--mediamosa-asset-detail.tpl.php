@@ -25,7 +25,9 @@
 ?>
 <ul class="item-navigation">
   <li><span><?php print l(t('View'), 'view', array('attributes' => array('class' => 'view'))); ?></span></li>
-  <li><span><?php print l(t('Edit'), 'asset/edit/' . $fields['asset_id']->raw, array('attributes' => array('class' => 'edit'))); ?></span></li>
+  <?php if ($fields['is_owner']->raw == TRUE): ?>
+    <li><span><?php print l(t('Edit'), 'asset/edit/' . $fields['asset_id']->raw, array('attributes' => array('class' => 'edit'))); ?></span></li>
+  <?php endif; ?>
 </ul>
 <h1><?php print $fields['title']->content; ?></h1>
 
@@ -38,7 +40,7 @@
     <p class="asset-view-count"><span class="count"><?php print $fields['played']->content; ?></span> <?php print t('views'); ?></p>
 
     <p class="asset-uploaded-info">
-      <?php print t('Posted by');?>: <strong><?php print $fields['metadata_dc']->raw['contributor']; ?></strong> <?php print t('on'); ?> <strong><?php print format_date($fields['metadata_dc']->raw['date'], 'short'); ?></strong>
+      <?php print t('Posted by');?>: <strong><?php print $fields['owner_id']->raw; ?></strong> <?php print t('on'); ?> <strong><?php print $fields['videotimestamp']->raw; ?></strong>
     </p>
   </div>
 
@@ -49,7 +51,7 @@
       <p><?php print t('This video is listed in the following Collection(s)'); ?>:</p>
       <?php print $fields['collections']->content; ?>
     <?php else: ?>
-      <p><?php print t('This video is not listed other Collections'); ?></p>
+      <p><?php print t('This video is not listed in other Collections'); ?></p>
     <?php endif; ?>
   </div>
 
@@ -91,16 +93,3 @@
     <?php print $fields['technical_metadata']->content; ?>
   </div>
 </div>
-<!-- 
-<?php foreach ($fields as $id => $field): ?>
-    <?php if (!empty($field->separator)): ?>
-      <?php print $field->separator; ?>
-    <?php endif; ?>
-
-    <?php print $field->wrapper_prefix; ?>
-      <?php print $field->label_html; ?>
-      <?php print $field->content; ?>
-    <?php print $field->wrapper_suffix; ?>
-  <?php endforeach; ?>
-
- -->
