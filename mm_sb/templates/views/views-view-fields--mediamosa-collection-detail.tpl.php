@@ -26,35 +26,24 @@
 <h1><?php print $fields['title']->content; ?></h1>
 <ul class="item-navigation">
   <li><span><?php print l(t('View'), 'view', array('attributes' => array('class' => 'view'))); ?></span></li>
-  <li><span><?php print l(t('Edit'), 'edit', array('attributes' => array('class' => 'edit'))); ?></span></li>
+  <li><span><?php print l(t('Edit'), 'collection/edit/' . $fields['coll_id']->raw, array('attributes' => array('class' => 'edit'))); ?></span></li>
 </ul>
 <div class="collection-videos">
   collection videos overview
 </div>
 
-<div class="asset-detail-information">
+<div class="collection-detail-information">
   <div class="information-row">
-    <p class="asset-view-count"><span class="count">[harcoded] 20</span> <?php print t('videos'); ?></p>
+    <p class="collection-view-count"><span class="count">20</span> <?php print t('videos'); ?></p>
 
-    <p class="asset-uploaded-info">
+    <p class="collection-uploaded-info">
       <?php print t('Posted by');?>: <strong>[hardcoded]</strong> <?php print t('on'); ?> <strong>[hardcoded]</strong>
     </p>
   </div>
 
-  <div class="information-row asset-formats">
-    <h3><?php print t('Additional format(s)'); ?></h3>
-
-    <p><?php print t('This video is available in the following additional format(s)'); ?>:</p>
-
-    <ul>
-      <li><?php print l('[hardcoded] Farmacologie', 'collection/O1Vb4NCUOolkT7iXSTVZmj0M');?></li>
-      <li><?php print l('[hardcoded] Lorem ipsum', 'collection/O1Vb4NCUOolkT7iXSTVZmj0M');?></li>
-      <li><?php print l('[hardcoded] Dolor Sit Amet', 'collection/O1Vb4NCUOolkT7iXSTVZmj0M');?></li>
-    </ul>
-  </div>
 </div>
 
-<!-- 
+<!--
 <?php foreach ($fields as $id => $field): ?>
     <?php if (!empty($field->separator)): ?>
       <?php print $field->separator; ?>
@@ -65,5 +54,4 @@
       <?php print $field->content; ?>
     <?php print $field->wrapper_suffix; ?>
   <?php endforeach; ?>
-
- -->
+  --> 

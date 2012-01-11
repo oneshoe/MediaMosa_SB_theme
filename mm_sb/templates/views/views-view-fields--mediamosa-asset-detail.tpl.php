@@ -45,25 +45,21 @@
   <div class="information-row asset-collections">
     <h3><?php print t('Collections'); ?></h3>
 
-    <p><?php print t('This video is listed in the following Collection(s)'); ?>:</p>
-
-    <ul>
-      <li><?php print l('[hardcoded] Farmacologie', 'collection/O1Vb4NCUOolkT7iXSTVZmj0M');?></li>
-      <li><?php print l('[hardcoded] Lorem ipsum', 'collection/O1Vb4NCUOolkT7iXSTVZmj0M');?></li>
-      <li><?php print l('[hardcoded] Dolor Sit Amet', 'collection/O1Vb4NCUOolkT7iXSTVZmj0M');?></li>
-    </ul>
+    <?php if ($fields['collections']->raw != NULL): ?>
+      <p><?php print t('This video is listed in the following Collection(s)'); ?>:</p>
+      <?php print $fields['collections']->content; ?>
+    <?php else: ?>
+      <p><?php print t('This video is not listed other Collections'); ?></p>
+    <?php endif; ?>
   </div>
 
   <div class="information-row asset-formats">
     <h3><?php print t('Additional format(s)'); ?></h3>
 
+
     <p><?php print t('This video is available in the following additional format(s)'); ?>:</p>
 
-    <ul>
-      <li><?php print l('[hardcoded] Farmacologie', 'collection/O1Vb4NCUOolkT7iXSTVZmj0M');?></li>
-      <li><?php print l('[hardcoded] Lorem ipsum', 'collection/O1Vb4NCUOolkT7iXSTVZmj0M');?></li>
-      <li><?php print l('[hardcoded] Dolor Sit Amet', 'collection/O1Vb4NCUOolkT7iXSTVZmj0M');?></li>
-    </ul>
+    <?php print $fields['mediafiles']->content; ?>
   </div>
 </div>
 
