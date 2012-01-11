@@ -200,7 +200,7 @@
 }
 
 .page-asset .view .views-row,
-.page-collection .view .views-row {
+.page-collection .view-mediamosa-collection-detail .views-row {
   padding: 0;
   border: none;
   position: relative;
@@ -491,7 +491,7 @@
 
 
 /**********************************************************
- * Asset / video overview
+ * Collection overview
  *********************************************************/
 
 .page-collections .view .views-table {
@@ -523,4 +523,51 @@
 .page-collections .view .views-table tr td.views-field-numofvideos {
   color: #000;
   font-size: 14px;
+}
+
+
+/**********************************************************
+ * Collection detail
+ *********************************************************/
+
+.page-collection .view-mediamosa-assets-in-collection {
+  width: 620px;
+  margin-top: -160px;
+}
+
+.page-collection .view-mediamosa-assets-in-collection .views-row {
+  width: 298px;
+  margin-right: 19px;
+  padding: 0;
+  clear: none;
+  float: left;
+}
+
+.page-collection .view-mediamosa-assets-in-collection .views-row .asset-information {
+  min-height: 70px;
+  padding: 9px;
+  position: relative;
+}
+
+.page-collection .view-mediamosa-assets-in-collection .views-row:nth-child(2n+2) {
+  margin-right: 0;
+}
+
+.page-collection .view-mediamosa-assets-in-collection .asset-information,
+.page-collection .view-mediamosa-assets-in-collection .views-field-still-url {
+  float: none;
+}
+
+.page-collection .view-mediamosa-assets-in-collection .views-field-still-url:after {
+  left: -205px;
+  top: -188px;
+}
+
+.page-collection .view-mediamosa-assets-in-collection .views-field-mediafile-duration {
+  left: 251px;
+  top: -34px;
+}
+
+.page-collection .view-mediamosa-assets-in-collection .views-field-title .field-content a {
+  font-size: 18px;
 }
