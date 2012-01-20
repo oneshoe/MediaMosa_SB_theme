@@ -39,14 +39,25 @@
   background: url('../images/btn_bg.png') repeat-x 0 100%;
 }
 
+.user-custom-navigation {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
 /**********************************************************
  * User login
  *********************************************************/
 
 #language-picker {
   position: absolute;
-  top: 40px;
-  right: 10px;
+  top: 45px;
+  right: 0;
+  font-size: 11px;
+  height: auto;
+  width: auto;
 }
 
 

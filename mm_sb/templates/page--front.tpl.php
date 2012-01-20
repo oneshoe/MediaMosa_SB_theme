@@ -7,6 +7,10 @@
       <?php print l(theme('image', array('path' => $logo, 'title' => $site_name, 'alt' => $site_name)), '<front>', array('html' => TRUE)); ?>
     </div>
 
+    <?php if ($user->uid != 0): ?>
+      <?php print l(t('My account'), 'user', array('attributes' => array('class' => array('user-custom-navigation')))); ?>
+    <?php endif;?>
+
     <?php if ($user->uid == 0): ?>
       <?php print l(t('Sign in'), 'user', array('attributes' => array('class' => array('user-login-button')))); ?>
     <?php endif;?>
