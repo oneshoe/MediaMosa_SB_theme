@@ -41,9 +41,9 @@
       <?php print render($page['help']); ?>
       <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
 
-      <ul class="item-navigation">
-        <li><span><?php print l(t('View'), 'view', array('attributes' => array('class' => 'view'))); ?></span></li>
-      </ul>
+<!--       <ul class="item-navigation">
+        <li><span><?php //print l(t('View'), 'view', array('attributes' => array('class' => 'view'))); ?></span></li>
+      </ul> -->
         <?php print render($page['content']); ?>
       <?php if (!empty($page['sidebar_first'])): ?>
         <div class="collection-information">

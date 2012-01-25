@@ -186,3 +186,13 @@ ul.tabs.primary li.active a {
   color: #b0b0b0;
   font-size: 24px;
 }
+
+.page-search .view-mediamosa-asset-search-page .views-row .asset-still {
+  margin-right: 20px;
+  float: left;
+}
+
+.page-search .view-mediamosa-asset-search-page .views-row .asset-information .views-field-title a {
+  font-size: 18px;
+}
+

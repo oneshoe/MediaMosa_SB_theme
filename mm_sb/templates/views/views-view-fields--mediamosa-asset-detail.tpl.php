@@ -24,7 +24,6 @@
  */
 ?>
 <ul class="item-navigation">
-  <li><span><?php print l(t('View'), 'view', array('attributes' => array('class' => 'view'))); ?></span></li>
   <?php if ($fields['is_owner']->raw == TRUE): ?>
     <li><span><?php print l(t('Edit'), 'asset/edit/' . $fields['asset_id']->raw, array('attributes' => array('class' => 'edit'))); ?></span></li>
   <?php endif; ?>
