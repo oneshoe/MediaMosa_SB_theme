@@ -327,6 +327,16 @@ html.js .views-exposed-form .views-exposed-widget .form-autocomplete.throbbing {
   /* background declaration in sprite.css */
 }
 
+.collection-detail-information .collection-description h3 {
+  color: #8e8e8e;
+  font-size: 18px;
+}
+
+.collection-detail-information .collection-description p .field-content {
+  color: #000;
+  font-size: 12px;
+}
+
 .asset-detail-information .asset-view-count .count .field-content,
 .collection-detail-information .collection-view-count .count {
   font-size: 28px;
@@ -603,21 +613,23 @@ html.js .views-exposed-form .views-exposed-widget .form-autocomplete.throbbing {
  * Collection detail
  *********************************************************/
 
-.page-collection #page_content .collection-holder {
-  width: 620px;
-  float: left;
-}
-
-.page-collection #page_content .collection-information {
+.page-collection-detail #page_content .collection-detail-information {
   width: 320px;
   float: right;
 }
 
-.page-collection .view-mediamosa-assets-in-collection {
+.page-collection-detail .view .collection-videos {
   width: 620px;
+  margin-right: 0;
+  float: left;
 }
 
-.page-collection .view-mediamosa-assets-in-collection .views-row {
+
+.page-collection-detail .view-mediamosa-collection-detail .collection-videos .views-row {
+  border: 1px solid #eee;
+}
+
+.page-collection-detail .view-mediamosa-assets-in-collection .views-row {
   width: 298px;
   margin-right: 19px;
   padding: 0;
@@ -625,31 +637,41 @@ html.js .views-exposed-form .views-exposed-widget .form-autocomplete.throbbing {
   float: left;
 }
 
-.page-collection .view-mediamosa-assets-in-collection .views-row .asset-information {
+.page-collection-detail .view-mediamosa-assets-in-collection .views-row .asset-information {
   min-height: 70px;
   padding: 9px;
   position: relative;
 }
 
-.page-collection .view-mediamosa-assets-in-collection .views-row:nth-child(2n+2) {
+.page-collection-detail .view-mediamosa-assets-in-collection .views-row:nth-child(2n+2) {
   margin-right: 0;
 }
 
-.page-collection .view-mediamosa-assets-in-collection .asset-information,
-.page-collection .view-mediamosa-assets-in-collection .views-field-still-url {
+.page-collection-detail .view-mediamosa-assets-in-collection .asset-information,
+.page-collection-detail .view-mediamosa-assets-in-collection .views-field-still-url {
   float: none;
+  position: relative;
 }
 
-.page-collection .view-mediamosa-assets-in-collection .views-field-still-url:after {
+.page-collection-detail .view-mediamosa-assets-in-collection .views-row .views-field-still-url:after {
   left: -205px;
-  top: -188px;
+  top: -150px;
 }
 
-.page-collection .view-mediamosa-assets-in-collection .views-field-mediafile-duration {
+.page-collection-detail .asset-information {
+  width: 280px;
+}
+
+.page-collection-detail .view-mediamosa-assets-in-collection .views-field-mediafile-duration {
   left: 251px;
   top: -34px;
 }
 
-.page-collection .view-mediamosa-assets-in-collection .views-field-title .field-content a {
+.page-collection-detail .view-mediamosa-assets-in-collection .views-field-title .field-content a {
   font-size: 18px;
+}
+
+
+.collection-detail-information .collection-description {
+  padding: 10px 10px 10px 7px;
 }

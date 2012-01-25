@@ -48,7 +48,7 @@
     <h3><?php print t('Collections'); ?></h3>
 
     <?php if ($fields['collections']->raw != NULL): ?>
-      <p><?php print t('This video is listed in the following Collection(s)'); ?>:</p>
+    <p><?php print t('This video is listed in the following Collection(s)'); ?>:</p>
       <?php print $fields['collections']->content; ?>
     <?php else: ?>
       <p><?php print t('This video is not listed in other Collections'); ?></p>

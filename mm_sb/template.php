@@ -42,10 +42,6 @@ function mediamosa_sb_theme_preprocess_page(&$variables) {
   if (module_exists('color')) {
     _color_page_alter($variables);
   }
-  //$variables['container_class'] = 'container-fluid';
-
-  // Set the $has_tabs variable.
-  //$variables['has_tabs'] = ($variables['tabs'] && (!empty($variables['tabs']['#primary']) || !empty($variables['tabs']['#secondary'])));
 }
 
 /**

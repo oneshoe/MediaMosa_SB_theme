@@ -8,6 +8,7 @@
 .page-collection-edit #content #page_content,
 .page-user #content #page_content {
   width: 824px;
+  position: relative;
 }
 
 .page-asset #content form,
@@ -22,7 +23,8 @@
   padding: 0 50px;
 }
 
-.page-asset #content form .form-item {
+.page-asset #content form .form-item,
+.page-collection #content form .form-item {
   margin: 0 inherit;
   padding: 1em inherit;
 }

@@ -40,10 +40,11 @@
       <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
       <?php print render($page['help']); ?>
       <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-      <div class="collection-holder">
-        <?php print render($page['content']); ?>
-      </div>
 
+      <ul class="item-navigation">
+        <li><span><?php print l(t('View'), 'view', array('attributes' => array('class' => 'view'))); ?></span></li>
+      </ul>
+        <?php print render($page['content']); ?>
       <?php if (!empty($page['sidebar_first'])): ?>
         <div class="collection-information">
           <?php print render($page['sidebar_first']); ?>
