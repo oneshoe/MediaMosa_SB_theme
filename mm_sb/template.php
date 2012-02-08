@@ -1,6 +1,4 @@
 <?php
-// $Id: template.php 1830 2011-10-13 16:16:01Z thijs $
-
 /**
  * @file
  * Template file containing alternative rendering for Drupal's default methods.

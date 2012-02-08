@@ -32,9 +32,9 @@
   <?php print $fields['mediafile_duration']->content; ?>
   <?php print $fields['mediafile_duration']->wrapper_suffix; ?>
 
-  <?php print $fields['viewed']->wrapper_prefix; ?>
-  <?php print $fields['viewed']->content; ?>
-  <?php print $fields['viewed']->wrapper_suffix; ?>
+  <?php print $fields['played']->wrapper_prefix; ?>
+  <?php print $fields['played']->content; ?>
+  <?php print $fields['played']->wrapper_suffix; ?>
 
   <?php print $fields['title']->wrapper_prefix; ?>
   <?php print $fields['title']->content; ?>

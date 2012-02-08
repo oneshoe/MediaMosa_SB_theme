@@ -25,7 +25,7 @@
 ?>
 <h1><?php print $fields['title']->content; ?></h1>
 <ul class="item-navigation">
-  <?php if ($fields['is_owner']->raw == TRUE): ?>
+  <?php if ($fields['access_edit']->raw == TRUE): ?>
     <li><span><?php print l(t('Edit'), 'collection/edit/' . $fields['coll_id']->raw, array('attributes' => array('class' => 'edit'))); ?></span></li>
   <?php endif; ?>
 </ul>

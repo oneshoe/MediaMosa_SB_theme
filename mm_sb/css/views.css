@@ -23,7 +23,7 @@
 .view .views-row {
   margin-bottom: 11px;
   padding: 10px;
-  border: 1px solid #eee;
+  border: 1px solid #d9d9d9;
   overflow: hidden;
   clear: both;
   position: relative;
@@ -51,6 +51,7 @@
   font-size: 12px;
   font-weight: bold;
   background: #000;
+    border: black solid 1px;
 }
 
 .not-front .view .views-field-mediafile-duration {
@@ -207,6 +208,10 @@ html.js .views-exposed-form .views-exposed-widget .form-autocomplete.throbbing {
   background: #000;
 }
 
+#spotlight .view .asset-information {
+  width: 280px;
+}
+
 #spotlight .views-field-mediafile-duration .field-content {
   color: #fff;
 }
@@ -223,8 +228,6 @@ html.js .views-exposed-form .views-exposed-widget .form-autocomplete.throbbing {
 
 #spotlight .view .asset-information .views-field-videotimestamp {
   font-size: 12px;
-  position: absolute;
-  bottom: 7px;
 }
 
 #spotlight .view .asset-information .views-field-videotimestamp .field-content {
@@ -489,7 +492,7 @@ html.js .views-exposed-form .views-exposed-widget .form-autocomplete.throbbing {
 .page-assets .views-row,
 .page-myassets .views-row {
   width: 220px;
-  height: 220px;
+  height: 200px;
   padding: 0;
   margin-right: 18px;
   float: left;
@@ -523,21 +526,21 @@ html.js .views-exposed-form .views-exposed-widget .form-autocomplete.throbbing {
   max-width: 170px;
 }
 
-.page-assets .views-row .asset-information .views-field-viewed,
-.page-myassets .views-row .asset-information .views-field-viewed {
+.page-assets .views-row .asset-information .views-field-played,
+.page-myassets .views-row .asset-information .views-field-played {
   float: right;
   text-align: right;
   display: block;
 }
 
-.page-assets .views-row .asset-information .views-field-viewed .field-content,
-.page-myassets .views-row .asset-information .views-field-viewed .field-content {
+.page-assets .views-row .asset-information .views-field-played .field-content,
+.page-myassets .views-row .asset-information .views-field-played .field-content {
   color: #000;
   font-size: 12px;
 }
 
-.page-assets .views-row .asset-information .views-field-viewed .field-content span,
-.page-myassets .views-row .asset-information .views-field-viewed .field-content span {
+.page-assets .views-row .asset-information .views-field-played .field-content span,
+.page-myassets .views-row .asset-information .views-field-played .field-content span {
   margin-top: -3px;
   display: block;
   color: #9f9f9f;
@@ -550,6 +553,12 @@ html.js .views-exposed-form .views-exposed-widget .form-autocomplete.throbbing {
   right: 7px;
 }
 
+/**********************************************************
+ * Asset search overview
+ *********************************************************/
+.views-row #asset-search .asset-information {
+  width:690px;
+}
 
 /**********************************************************
  * Collection overview
