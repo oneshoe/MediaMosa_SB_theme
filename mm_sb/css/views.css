@@ -614,6 +614,26 @@ html.js .views-exposed-form .views-exposed-widget .form-autocomplete.throbbing {
   background: #eaeaf3;
 }
 
+/* my collections custom widths for table columns */
+.page-mycollections .view .views-table tr th.views-field-title,
+.page-collections .view .views-table tr th.views-field-title {
+  width: 300px;
+}
+
+.page-mycollections .view .views-table tr th.views-field-description,
+.page-collections .view .views-table tr th.views-field-description {
+  width: 240px;
+}
+
+.page-mycollections .view .views-table tr th.views-field-actions {
+  width: 112px;
+}
+
+.page-collections .view .views-table tr td,
+.page-mycollections .view .views-table tr td {
+  vertical-align: top;
+}
+
 .page-collections .view .views-table tr td,
 .page-mycollections .view .views-table tr td {
   padding: 11px 0 11px 11px;
